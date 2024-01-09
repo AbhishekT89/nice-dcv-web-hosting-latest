@@ -78,7 +78,7 @@ function connect (sessionId, authToken) {
     console.log("Connection established!");
     connection= conn;
 	  console.log('connection',JSON.stringify(connection));
-    document.addEventListener("click", () =>connection.enterRelativeMouseMode());
+    document.getElementById("dcv-display").addEventListener("click", () =>connection.enterRelativeMouseMode());
 	console.log("mouse click");
   }).catch(function (error) {
     console.log("Connection failed with error " + error.message);

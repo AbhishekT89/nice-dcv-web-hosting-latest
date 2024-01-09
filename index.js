@@ -15,7 +15,7 @@ function main () {
   console.log("Setting log level to INFO");
   dcv.setLogLevel(dcv.LogLevel.INFO);
 
-  serverUrl = "https://your-dcv-server-url:port/";
+  serverUrl = "https://15.207.14.233:8443/";
 
 
 

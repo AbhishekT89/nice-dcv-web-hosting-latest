@@ -76,6 +76,7 @@ function connect (sessionId, authToken) {
   }).then(function (conn) {
     console.log("Connection established!");
     connection= conn;
+	  console.log('connection',JSON.stringify(connection));
     document.addEventListener("mouse-click", () =>connection.enterRelativeMouseMode());
 	console.log("mouse click");
   }).catch(function (error) {

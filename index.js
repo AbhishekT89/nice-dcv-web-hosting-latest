@@ -32,7 +32,7 @@ function main () {
 }
 
 
-function onPromptCredentials(auth, challenge) {
+function O1_onPromptCredentials(auth, challenge) {
   // Let's check if in challege we have a username and password request
   if (challengeHasField(challenge, "username") && challengeHasField(challenge, "password")) {
     auth.sendCredentials({username: MY_DCV_USER, password: MY_PASSWORD})

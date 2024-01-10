@@ -20,7 +20,7 @@ console.log("Using NICE DCV Web Client SDK version " + dcv.version.versionStr);
 //     main();
 // }
 
-function main() {
+export const main = () => {
   console.log("Setting log level to INFO");
   dcv.setLogLevel(dcv.LogLevel.INFO);
   r = document.getElementById("inputBar");

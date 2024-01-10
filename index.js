@@ -21,8 +21,8 @@ function getUrl () {
     r=document.getElementById("inputBar");
     URL=r.value;
     window.URL = URL;
-document.addEventListener('DOMContentLoaded', main);
-    //main(); 
+// document.addEventListener('DOMContentLoaded', main);
+    main(); 
 }
 
 function main () {

@@ -145,3 +145,5 @@ function onPromptCredentials (_, credentialsChallenge) {
   createLoginForm();
   credentialsChallenge.requiredCredentials.forEach(challenge => addInput(challenge.name));
 }
+
+export default main;

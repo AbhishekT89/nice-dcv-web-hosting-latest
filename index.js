@@ -15,28 +15,33 @@ let auth,
 
 console.log("Using NICE DCV Web Client SDK version " + dcv.version.versionStr);
 
-var URL="";
+// var URL="";
 
-function getUrl () {
+// function getUrl () {
 
-console.log("Abhishek");
-    r=document.getElementById("inputBar");
-    URL=r.value;
-    window.URL = URL;
-// document.addEventListener('DOMContentLoaded', main);
-    main(); 
-}
+// console.log("Abhishek");
+//     r=document.getElementById("inputBar");
+//     URL=r.value;
+//     window.URL = URL;
+// // document.addEventListener('DOMContentLoaded', main);
+//     main(); 
+// }
 
-function main () {
+function main (url) {
   console.log("Setting log level to INFO");
   dcv.setLogLevel(dcv.LogLevel.INFO);
 
   //serverUrl = "https://15.207.14.233:8443/";
 
-    serverUrl = "https://your-dcv-server-url:port/";
-    if (window.URL != "") {
-	serverUrl = window.URL;
-    }
+ //    serverUrl = "https://your-dcv-server-url:port/";
+ //    if (window.URL != "") {
+	// serverUrl = window.URL;
+ //    }
+
+	  // Use the provided URL or set a default one
+  const serverUrl = url || "https://your-dcv-server-url:port/";
+
+  // console.log("Starting authentication with", serverUrl);
 
   console.log("Starting authentication with", serverUrl);
 

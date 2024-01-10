@@ -148,4 +148,3 @@ function onPromptCredentials (_, credentialsChallenge) {
   credentialsChallenge.requiredCredentials.forEach(challenge => addInput(challenge.name));
 }
 
-export default main;

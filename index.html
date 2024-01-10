@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>DCV first connection</title>
 <!--     <link href="./css/main.css" rel="stylesheet" type="text/css" media="all"> -->
-        <script>
+        <script type="module" src="index.js">
 var URL="";
 
 function getUrl () {
@@ -23,7 +23,7 @@ function onBtnClick(){
 </head>
 
 <body >
-      <script type="module" src="index.js"></script>
+<!--       <script type="module" src="index.js"></script> -->
       <div id="root" style="background: #192534; height: 100vh;" >
         <input type="text" id="inputBar" onInput="getUrl()" placeholder="Enter DCV URL" style="margin: 5px; padding: 6px;">
  <button onClick="onBtnClick()">go!</button>

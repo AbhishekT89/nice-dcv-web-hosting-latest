@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <title>DCV first connection</title>
     <link href="./css/main.css" rel="stylesheet" type="text/css" media="all">
-    <script type="module" src="./index.js"></script>
+    <script type="module">import {main}  from "./index.js";
+</script>
     <script>
         var URL = "";
 
@@ -15,7 +16,6 @@
             URL = r.value;
             console.log("URL " + URL);
             // Call main after getting the URL
-            connect()
             main(URL);
         }
     </script>

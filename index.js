@@ -27,10 +27,12 @@ console.log("Using NICE DCV Web Client SDK version " + dcv.version.versionStr);
 //     main(); 
 // }
 
-function main (url) {
+function main () {
   console.log("Setting log level to INFO");
   dcv.setLogLevel(dcv.LogLevel.INFO);
-
+ r = document.getElementById("inputBar");
+URL = r.value;
+	serverUrl= URL
   //serverUrl = "https://15.207.14.233:8443/";
 
  //    serverUrl = "https://your-dcv-server-url:port/";
@@ -39,7 +41,7 @@ function main (url) {
  //    }
 
 	  // Use the provided URL or set a default one
-  const serverUrl = url || "https://your-dcv-server-url:port/";
+  // const serverUrl = url || "https://your-dcv-server-url:port/";
 
   // console.log("Starting authentication with", serverUrl);
 

@@ -13,23 +13,16 @@
             r = document.getElementById("inputBar");
             URL = r.value;
             console.log("URL " + URL);
-
-            // Call main after updating URL
+            // Call main after getting the URL
             main(URL);
         }
-
-        // Register the function to be called when the document is ready
-        document.addEventListener('DOMContentLoaded', () => {
-            // Attach the getUrl function to the input's onInput event
-            document.getElementById("inputBar").addEventListener("input", getUrl);
-        });
     </script>
+    <script type="module" src="./index.js"></script>
 </head>
 
 <body>
-    <script type="module" src="./index.js"></script>
     <div id="root" style="background: #192534; height: 100vh;">
-        <input type="text" id="inputBar" placeholder="Enter DCV URL" style="margin: 5px; padding: 6px;">
+        <input type="text" id="inputBar" onInput="getUrl()" placeholder="Enter DCV URL" style="margin: 5px; padding: 6px;">
         <div class="dcv-container" style="position: fixed; bottom: 1px;">
             <div id="dcv-display" style="position:"></div>
         </div>

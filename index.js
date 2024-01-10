@@ -18,6 +18,8 @@ console.log("Using NICE DCV Web Client SDK version " + dcv.version.versionStr);
 var URL="";
 
 function getUrl () {
+
+console.log("Abhishek");
     r=document.getElementById("inputBar");
     URL=r.value;
     window.URL = URL;
